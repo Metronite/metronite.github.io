@@ -19,6 +19,10 @@ body {
     font-size: 100%;
     background-color: #1fac7c;
     color: #ffffff;
+-webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+     -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +32,17 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin: 10px 0;
+}
+
+a, a:link {
+    color: #1fac7c;
+    text-decoration: none;
+    padding: 1px 2px;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #1fac7c;
 }
 
 .logo {
@@ -64,7 +79,7 @@ p {
     display: table;
     height: 100%;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 82px;
 }
 
 .site-content {
@@ -92,15 +107,37 @@ p {
     line-height: .7em;
 }
 
-a, a:link {
-    color: #1fac7c;
-    text-decoration: none;
-    padding: 1px 2px;
+.push {
+    margin-bottom: 40px;
 }
 
-a:hover {
-    color: #ffffff;
-    background-color: #1fac7c;
+.btn, a.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #ffffff;
+-webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+     -o-border-radius: 4px;
+        border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: normal;
+-webkit-transition: background-color 0.5s ease, color 0.2s ease;
+   -moz-transition: background-color 0.5s ease, color 0.2s ease;
+     -o-transition: background-color 0.5s ease, color 0.2s ease;
+        transition: background-color 0.5s ease, color 0.2s ease;
+}
+
+.btn:hover, a.btn:hover {
+    background-color: #ffffff;
+    color: #1fac7c;
+}
+
+.btn:active, a.btn:active {
+    position: relative;
+    top: 2px;
 }
 
 /**
