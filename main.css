@@ -104,7 +104,7 @@ a:hover {
     text-transform: uppercase;
     font-size: .6em;
     letter-spacing: .2em;
-    line-height: .7em;
+    line-height: 1.7em;
 }
 
 .push {
@@ -147,5 +147,17 @@ a:hover {
     .logo {
         background-image: url(logo2x.png);
         background-size: 72px 70px;
+    }
+}
+
+@media only screen and (max-width: 71.25em) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    body {
+        font-size: 80%;
     }
 }
